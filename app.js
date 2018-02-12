@@ -22,6 +22,11 @@ app.get('/astrologySigns',function(req,res){
   //__dirname : It will resolve to your project folder.
 });
 
+app.get('/characteristics',function(req,res){
+  res.sendFile(__dirname+'/views/characteristics.html');
+  //__dirname : It will resolve to your project folder.
+});
+
 app.post('/astrology',function(req,res){
 	var info = {};
 	var month = Number(req.body.month);
