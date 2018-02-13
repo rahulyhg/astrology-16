@@ -1,0 +1,9 @@
+<h1>Here is your zodiac sign and image</h1>
+<div class="container">
+	<% if (info) { %>
+  		<p>Hello <%=info.name%>!</p>
+  		<p>Your Selected Year: <%=info.year%></p>
+  		<p>Your Zodiac Sign: <%=info.sign%></p>
+  		<img src="<%=info.url%>">
+	<% } %>
+</div>
